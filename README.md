@@ -1,4 +1,4 @@
-About dm_control
+About dm-control
 ================
 
 Home: https://github.com/deepmind/dm_control
@@ -27,53 +27,53 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-dm_control-green.svg)](https://anaconda.org/conda-forge/dm_control) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dm_control.svg)](https://anaconda.org/conda-forge/dm_control) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dm_control.svg)](https://anaconda.org/conda-forge/dm_control) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dm_control.svg)](https://anaconda.org/conda-forge/dm_control) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-dm--control-green.svg)](https://anaconda.org/conda-forge/dm-control) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/dm-control.svg)](https://anaconda.org/conda-forge/dm-control) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/dm-control.svg)](https://anaconda.org/conda-forge/dm-control) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/dm-control.svg)](https://anaconda.org/conda-forge/dm-control) |
 
-Installing dm_control
+Installing dm-control
 =====================
 
-Installing `dm_control` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `dm-control` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `dm_control` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `dm-control` can be installed with `conda`:
 
 ```
-conda install dm_control
-```
-
-or with `mamba`:
-
-```
-mamba install dm_control
-```
-
-It is possible to list all of the versions of `dm_control` available on your platform with `conda`:
-
-```
-conda search dm_control --channel conda-forge
+conda install dm-control
 ```
 
 or with `mamba`:
 
 ```
-mamba search dm_control --channel conda-forge
+mamba install dm-control
+```
+
+It is possible to list all of the versions of `dm-control` available on your platform with `conda`:
+
+```
+conda search dm-control --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search dm-control --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search dm_control --channel conda-forge
+mamba repoquery search dm-control --channel conda-forge
 
-# List packages depending on `dm_control`:
-mamba repoquery whoneeds dm_control --channel conda-forge
+# List packages depending on `dm-control`:
+mamba repoquery whoneeds dm-control --channel conda-forge
 
-# List dependencies of `dm_control`:
-mamba repoquery depends dm_control --channel conda-forge
+# List dependencies of `dm-control`:
+mamba repoquery depends dm-control --channel conda-forge
 ```
 
 
@@ -118,17 +118,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating dm_control-feedstock
+Updating dm-control-feedstock
 =============================
 
-If you would like to improve the dm_control recipe or build a new
+If you would like to improve the dm-control recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/dm_control-feedstock are
+Note that all branches in the conda-forge/dm-control-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
