@@ -1,4 +1,4 @@
-{% set name = "dm_control" %}
+{% set name = "dm-control" %}
 {% set version = "1.0.9" %}
 
 package:
@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dm_control-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/dm_control/dm_control/dm_control-{{ version }}.tar.gz
   sha256: 452f175bd04fdd0692c01cfa25dc09ff7ce61a81674f92cb1c4ac0f5cb6e1fb0
 
 build:
