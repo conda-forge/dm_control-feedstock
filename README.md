@@ -1,11 +1,11 @@
-About dm-control
-================
+About dm-control-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dm_control-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/deepmind/dm_control
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dm_control-feedstock/blob/main/LICENSE.txt)
 
 Summary: Continuous control environments and MuJoCo Python bindings.
 
