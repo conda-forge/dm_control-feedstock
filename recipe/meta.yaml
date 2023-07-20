@@ -1,5 +1,5 @@
 {% set name = "dm-control" %}
-{% set version = "1.0.13" %}
+{% set version = "1.0.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dm_control/dm_control-{{ version }}.tar.gz
-  sha256: 4b86ee127204b0400b18d029197c5ca98a1268a9d2da195a0b26a82b6777bce3
+  sha256: def1ece747b6f175c581150826b50f1a6134086dab34f8f3fd2d088ea035cf3d
 
 build:
   noarch: python
