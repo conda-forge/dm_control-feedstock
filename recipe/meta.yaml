@@ -29,6 +29,7 @@ requirements:
     - dm-env
     - dm-tree !=0.1.2
     - glfw
+    - pyglfw
     - labmaze
     - lxml
     - mujoco >=2.3.4
