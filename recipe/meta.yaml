@@ -32,7 +32,7 @@ requirements:
     - pyglfw
     - labmaze
     - lxml
-    - mujoco >=3.1.1
+    - mujoco >=3.1.5
     - numpy >=1.9.0
     - protobuf >=3.19.4
     - pyopengl >=3.1.4
