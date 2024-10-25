@@ -18,13 +18,13 @@ requirements:
   build:
     - mujoco
   host:
-    - python >=3.7
+    - python >=3.9
     - mujoco
     - pip
     - pyparsing >=3.0.0
 
   run:
-    - python >=3.8
+    - python >=3.9
     - absl-py >=0.7.0
     - dm-env
     - dm-tree !=0.1.2
