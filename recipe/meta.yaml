@@ -1,5 +1,5 @@
 {% set name = "dm-control" %}
-{% set version = "1.0.24" %}
+{% set version = "1.0.25" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dm_control/dm_control-{{ version }}.tar.gz
-  sha256: b839cb0dc44e7d8cdf4f198638c6a92d7d845c85f188c9205e222a08d78d07e8
+  sha256: 28cb07d8f4bbcda49d7ea6a967b5b3b48d29f4bce770d27f71a87af54c8a4f80
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - pyglfw
     - labmaze
     - lxml
-    - mujoco >=3.2.1
+    - mujoco >=3.2.5
     - numpy >=1.9.0
     - protobuf >=3.19.4
     - pyopengl >=3.1.4
