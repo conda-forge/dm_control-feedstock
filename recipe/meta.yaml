@@ -1,13 +1,13 @@
 {% set name = "dm-control" %}
-{% set version = "1.0.24" %}
+{% set version = "1.0.25" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/dm_control/dm_control-{{ version }}.tar.gz
-  sha256: b839cb0dc44e7d8cdf4f198638c6a92d7d845c85f188c9205e222a08d78d07e8
+  url: https://pypi.org/packages/source/d/dm_control/dm_control-{{ version }}.tar.gz
+  sha256: 28cb07d8f4bbcda49d7ea6a967b5b3b48d29f4bce770d27f71a87af54c8a4f80
 
 build:
   noarch: python
@@ -18,14 +18,14 @@ requirements:
   build:
     - mujoco
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - mujoco
     - pip
     - pyparsing >=3.0.0
     - setuptools !=50.0.0
 
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - absl-py >=0.7.0
     - dm-env
     - dm-tree !=0.1.2
@@ -33,7 +33,7 @@ requirements:
     - pyglfw
     - labmaze
     - lxml
-    - mujoco >=3.2.1
+    - mujoco >=3.2.5
     - numpy >=1.9.0
     - protobuf >=3.19.4
     - pyopengl >=3.1.4
@@ -53,6 +53,7 @@ test:
     - pytest --pyargs dm_control -v -k "not (viewer or render or glfw or Camera or cmu or rodent or termination or escape or maze or ant or ball or task or Depth or Scene or Overlay or Context or 39 or visualize or Pixels or test_physics_error_message_in_debug_mode or ExportWithAssetsAsZipTest or test_environment_is_deterministic40
       or test_initial_state_is_randomized40 or test_observation_arrays_dont_share_memory40)"
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
     - mock
