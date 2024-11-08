@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/dm_control/dm_control-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/dm_control/dm_control-{{ version }}.tar.gz
   sha256: 28cb07d8f4bbcda49d7ea6a967b5b3b48d29f4bce770d27f71a87af54c8a4f80
 
 build:
