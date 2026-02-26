@@ -1,5 +1,2 @@
-mesa-libGL
-libselinux
-libXdamage
-libXxf86vm
-libXext
+mesa-libEGL-devel
+mesa-dri-drivers
