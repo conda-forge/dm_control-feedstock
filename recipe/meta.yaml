@@ -18,7 +18,7 @@ build:
 
 requirements:
   build:
-    - mujoco
+    - mujoco {{ mujoco_min_version }}
   host:
     - python {{ python_min }}
     - pip
