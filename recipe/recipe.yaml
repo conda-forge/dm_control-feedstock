@@ -51,12 +51,9 @@ tests:
       imports:
         - dm_control
       pip_check: true
+      python_version: ${{ python_min }}.*
   - script:
-      # All tests excluded (except for test_physics_error_message_in_debug_mode and ExportWithAssetsAsZipTest)
-      # are excluded as they require a GL context.
-      # test_physics_error_message_in_debug_mode and ExportWithAssetsAsZipTest are excluded due to
-      # some Windows failures in loading test assets.
-      - pytest --pyargs dm_control -v -k "not (viewer or render or glfw or Camera or cmu or rodent or termination or escape or maze or ant or ball or task or Depth or Scene or Overlay or Context or 39 or visualize or Pixels or test_physics_error_message_in_debug_mode or ExportWithAssetsAsZipTest or test_environment_is_deterministic40 or test_initial_state_is_randomized40 or test_observation_arrays_dont_share_memory40)"
+      - pytest --pyargs dm_control -v -k "not (render or viewer or glfw or Camera or Depth or Scene or Overlay or Context or Pixels or visualize or test_env_runs_cmu_humanoid_heterogeneous_forage or test_env_runs_cmu_humanoid_maze_forage or test_env_runs_cmu_humanoid_run_gaps or test_env_runs_cmu_humanoid_run_walls or test_env_runs_rodent_escape_bowl or test_env_runs_rodent_maze_forage or test_env_runs_rodent_run_gaps or test_env_runs_rodent_two_touch or test_termination_and_discount or test_contact or test_observables or test_initial_state_is_randomized40 or test_observation_arrays_dont_share_memory40 or test_observations_dont_contain_constant_elements40 or test_task_conforms_to_spec40 or test_can_compile_and_step_simulation or test_evaluate_observable0 or test_evaluate_observable1 or test_evaluate_observable2 or test_evaluate_observable3 or test_evaluate_observable4 or test_evaluate_observable5 or test_task_runs1 or test_task_runs10 or test_task_runs12 or test_task_runs14 or test_task_runs16 or test_task_runs18 or test_task_runs20 or test_task_runs22 or test_task_runs24 or test_task_runs3 or test_task_runs5 or test_task_runs8 or test_environment_is_deterministic40)"
     requirements:
       run:
         - python ${{ python_min }}.*
@@ -66,8 +63,7 @@ tests:
         - h5py
         - pillow
         - mujoco ==${{ mujoco_min_version }}
-    python:
-      python_version: ${{ python_min }}.*
+
 
 about:
   homepage: https://github.com/deepmind/dm_control
