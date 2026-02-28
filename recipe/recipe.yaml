@@ -21,6 +21,10 @@ requirements:
     - pip
     - setuptools
     - mujoco ==${{ mujoco_min_version }}
+    - pyparsing >=3.0.0
+    - setuptools >=40.6.0
+    - wheel
+    - absl-py >=0.7.0
   host:
     - python ${{ python_min }}.*
     - pip
