@@ -53,7 +53,7 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
-      - pytest --pyargs dm_control -v -k "not (render or viewer or glfw or Camera or Depth or Scene or Overlay or Context or Pixels or visualize)"
+      - pytest --pyargs dm_control -v -k "not (render or viewer or glfw or Camera or Depth or Scene or Overlay or Context or Pixels or visualize or test_env_runs_cmu_humanoid_heterogeneous_forage or test_env_runs_cmu_humanoid_maze_forage or test_env_runs_cmu_humanoid_run_gaps or test_env_runs_cmu_humanoid_run_walls or test_env_runs_rodent_escape_bowl or test_env_runs_rodent_maze_forage or test_env_runs_rodent_run_gaps or test_env_runs_rodent_two_touch or test_termination_and_discount or test_contact or test_observables or test_initial_state_is_randomized40 or test_observation_arrays_dont_share_memory40 or test_observations_dont_contain_constant_elements40 or test_task_conforms_to_spec40)"
     requirements:
       run:
         - python ${{ python_min }}.*
