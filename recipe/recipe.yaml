@@ -1,7 +1,7 @@
 context:
   name: dm-control
-  version: "1.0.30"
-  mujoco_min_version: "3.3.2"
+  version: "1.0.31"
+  mujoco_min_version: "3.3.3"
 
 package:
   name: ${{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/dm_control/dm_control-${{ version }}.tar.gz
-  sha256: 26d72e7917f0e4383b51b089f3176a706426537d51b0c2f36ecb1fd7c493b47e
+  sha256: b26050ce1810dc307c6a55851a1541ff8ca3cdbee4b3ff42c1f6020d2c2a8f07
 
 build:
   number: 0
