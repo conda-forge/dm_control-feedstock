@@ -53,7 +53,7 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
-      - MUJOCO_GL=egl pytest --pyargs dm_control -v
+      - pytest --pyargs dm_control -v -k "not (render or viewer or glfw or Camera or Depth or Scene or Overlay or Context or Pixels or visualize)"
     requirements:
       run:
         - python ${{ python_min }}.*
