@@ -18,6 +18,8 @@ build:
 
 requirements:
   build:
+    - pip
+    - setuptools
     - mujoco ==${{ mujoco_min_version }}
   host:
     - python ${{ python_min }}.*
