@@ -14,17 +14,11 @@ source:
 build:
   number: 1
   noarch: python
-  script: python -m pip install . -vv --no-deps --no-build-isolation
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
-    - pip
-    - setuptools
     - mujoco ==${{ mujoco_min_version }}
-    - pyparsing >=3.0.0
-    - setuptools >=40.6.0
-    - wheel
-    - absl-py >=0.7.0
   host:
     - python ${{ python_min }}.*
     - pip
